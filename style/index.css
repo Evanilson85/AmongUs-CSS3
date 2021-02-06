@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+}
+main {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.impostor {
+  position: relative;
+  width: 300px;
+}
+
+.impostor .body {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 35% 45% 0 0;
+  border: 30px solid #000;
+}
+.impostor .body .fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #7b0236;
+}
+.impostor .body .shadow {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  background: #c70a01;
+  border-radius: 0% 10% 25% 48% / 20% 0% 100% 100%;
+}
+
+.impostor .backpack {
+  position: absolute;
+  height: 280px;
+  width: 120px;
+  background-color: #c70a01;
+  border: 30px solid #000;
+  border-radius: 40% 0 0 50% / 15%;
+  left: -75px;
+  top: 130px;
+  overflow: hidden;
+}
+.impostor .backpack .shadow {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  background: #7b0236;
+  bottom: 0;
+  border-radius: 40% 0 0 0 /10% 0 0 0;
+}
+
+.impostor .glass {
+  position: absolute;
+  width: 220px;
+  height: 160px;
+  background: #4a646d;
+  top: 90px;
+  right: -20px;
+  border: 30px solid #000;
+  border-radius: 25% 45% 40% 40% /50%;
+  transform: rotate(-4deg);
+  overflow: hidden;
+}
+
+.impostor .glass .shadow-blue {
+  position: absolute;
+  right: 0;
+  width: 90%;
+  height: 70px;
+  background: #94c9db;
+  border-radius: 10% 10% 100% 100% / 100% 100% 50% 100%;
+}
+
+.impostor .glass .shadow-white {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  width: 100px;
+  height: 40px;
+  background: #fff;
+  border-radius: 30% 70% 30% 30% / 30% 70% 30% 60%;
+}
+
+.impostor .legs {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-30px);
+}
+
+.impostor .legs .legs-left {
+  position: relative;
+  width: 133px;
+  height: 130px;
+  background: #7b0236;
+  border-left: 30px solid #000;
+  border-bottom: 30px solid #000;
+  border-right: 30px solid #000;
+  border-radius: 0 0 40% 40%;
+}
+.impostor .legs .legs-right {
+  width: 122px;
+  position: relative;
+  height: 105px;
+  background: #7b0236;
+  border-left: 30px solid #000;
+  border-bottom: 30px solid #000;
+  border-right: 30px solid #000;
+  border-radius: 0 0 40% 40%;
+}
+.impostor .legs .legs-right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 75px;
+  height: 30px;
+  background-color: #000;
+  border-radius: 0 0 100% 0;
+}
+
+.impostor .floor {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 450px;
+  height: 80px;
+  background: #525858;
+  border-radius: 50%;
+}
